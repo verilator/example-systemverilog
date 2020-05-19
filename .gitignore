@@ -1,0 +1,41 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Verilator/simulator temporaries
+*.dmp
+*.log
+*.csrc
+*.vcd
+obj_*
+logs
+
+# Executables
+*.exe
+*.out
+*.app
+*.gcda
+*.gcov
+*.gcno
+*qmake_gcov
+*.pro.user
