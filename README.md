@@ -1,4 +1,4 @@
-# travis_verilator_gcov
+# SystemVerilog Verilator Codecov Tutorial
 
 [![Travis CI logo](TravisCI.png)](https://travis-ci.org)
 ![Whitespace](Whitespace.png)
@@ -18,4 +18,4 @@ The goal of this project is to demonstrate a SystemVerilog project with:
  * Code coverage with `verilator_coverage` (note: it should show the code coverage is below 100%)
  * Code coverage published in CodeCov.
 
-We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
+We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io).
