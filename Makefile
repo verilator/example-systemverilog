@@ -22,6 +22,8 @@ endif
 ######################################################################
 # Set up variables
 
+GENHTML = genhtml
+
 # If $VERILATOR_ROOT isn't in the environment, we assume it is part of a
 # package install, and verilator is in your path. Otherwise find the
 # binary relative to $VERILATOR_ROOT (such as when inside the git sources).
@@ -101,6 +103,11 @@ run:
 
 show-config:
 	$(VERILATOR) -V
+
+genhtml:
+	@echo "-- GENHTML --------------------"
+	@echo "-- Note not installed by default, so not in default rule
+	$(GENHTML) logs/coverage.info --output-directory logs/html
 
 maintainer-copy::
 clean mostlyclean distclean maintainer-clean::
