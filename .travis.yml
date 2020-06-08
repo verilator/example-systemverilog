@@ -7,11 +7,11 @@ compiler: gcc
 services:
   - docker
 
-# This uses the latest version of Verilator, you may prefer :stable
+# This uses the ":stable" version of Verilator, you may prefer ":latest"
 # We run make from inside the container, overriding default entry point (Verilator binary itself)
 # You may prefer to build install Verilator from git locally (slower but avoids docker)
 script: 
-  - docker run -ti -v ${PWD}:/work --user $(id -u):$(id -g) -e CCACHE_DIR=/work/.ccache --entrypoint make verilator/verilator:latest
+  - docker run -ti -v ${PWD}:/work --user $(id -u):$(id -g) -e CCACHE_DIR=/work/.ccache --entrypoint make verilator/verilator:stable
 
 after_success: 
   - bash <(curl -s https://codecov.io/bash)
