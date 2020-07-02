@@ -18,4 +18,6 @@ The goal of this project is to demonstrate a SystemVerilog project with:
  * Code coverage with `verilator_coverage` (note: it should show the code coverage is below 100%)
  * Code coverage published in CodeCov.
 
-We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io).
+Support:
+ * [wsnyder](https://github.com/wsnyder)
+ * [Codecov community boards](https://community.codecov.io)
