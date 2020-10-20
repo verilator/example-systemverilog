@@ -106,7 +106,7 @@ show-config:
 
 genhtml:
 	@echo "-- GENHTML --------------------"
-	@echo "-- Note not installed by default, so not in default rule
+	@echo "-- Note not installed by default, so not in default rule"
 	$(GENHTML) logs/coverage.info --output-directory logs/html
 
 maintainer-copy::
