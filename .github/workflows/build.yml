@@ -1,0 +1,25 @@
+# DESCRIPTION: Github actions config
+name: build
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * 0' # weekly
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+# This uses the ":stable" version of Verilator, you may prefer ":latest"
+# We run make from inside the container, overriding default entry point (Verilator binary itself)
+# You may prefer to build install Verilator from git locally (slower but avoids docker)
+      - name: Verilate
+        run: docker run -v ${PWD}:/work --user $(id -u):$(id -g) -e CCACHE_DIR=/work/.ccache --entrypoint make verilator/verilator:stable
+
+
+      - name: Publish
+        run: bash <(curl -s https://codecov.io/bash)
