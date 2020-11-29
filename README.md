@@ -18,5 +18,5 @@ The goal of this project is to demonstrate a SystemVerilog project with:
  * Code coverage published in CodeCov.
 
 Support:
- * [wsnyder](https://github.com/wsnyder)
+ * [Verilator Forum](https://verilator.org/forum)
  * [Codecov community boards](https://community.codecov.io)
