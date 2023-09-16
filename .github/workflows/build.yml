@@ -22,6 +22,6 @@ jobs:
         run: docker run -v ${PWD}:/work --user $(id -u):$(id -g) -e CCACHE_DIR=/work/.ccache --entrypoint make verilator/verilator:stable
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4-beta-beta-beta-beta
+        uses: codecov/codecov-action@v4-beta
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_ORG_TOKEN }}
